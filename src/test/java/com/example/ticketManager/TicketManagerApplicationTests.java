@@ -44,9 +44,9 @@ public class TicketManagerApplicationTests {
 
 
 		Ticket ticket1 = new Ticket();
-		ticket1.setDateOpen(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2019-07-27 15:00:00"));
-		ticket1.setTtNumber("TT090897867665");
-		Long operatorId = operatorRepo.getOperatorIdByName("BITAF");
+		ticket1.setDateOpen(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2019-07-27 18:00:00"));
+		ticket1.setTtNumber("TT090897863365");
+		Long operatorId = operatorRepo.getOperatorIdByName("SIP_BEZEQ");
 		Operator operator1 = operatorRepo.getOne(operatorId);
 		ticket1.setOperator(operator1);
 		ticketRepo.save(ticket1);
